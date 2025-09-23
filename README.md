@@ -7,5 +7,5 @@ todo
 - calculate connections - DONE
 - configurable connection redundancy IE: multiple peers -> one peer so then the one peer can verify that its not getting bogus - DONE
 
-
-- adapt for no existant project - WIP
+- add data simulation
+- adapt for none existant project - WIP
