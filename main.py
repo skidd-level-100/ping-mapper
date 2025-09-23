@@ -79,10 +79,6 @@ def main():
     set_relations(nodes) # in practice replace this with your own peer scoring function, sort the list from best(score 0) to worst (very high score(ping)) [[node  id, score],[node  id, score],etc]
     aquire_best_peers(nodes)
 
-    #print("Node relations (node id,relitive ping):")
-    #for index,node in enumerate(nodes):
-    #    print(f"    {index} | {node.relations}")
-
     print("\nwho connects to who (node id, (input peers, output peers))")
     print("HINT: output to input peers if information comes from output peers")
     for index,node in enumerate(nodes):
