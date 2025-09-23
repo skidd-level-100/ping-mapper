@@ -5,4 +5,4 @@ maps optimal connections between nodes based on scores and with configurable con
 todo
 
 - calculate connections
-- configurable connection redundancy
+- configurable connection redundancy IE: multiple peers -> one peer so then the one peer can verify that its not getting bogus
