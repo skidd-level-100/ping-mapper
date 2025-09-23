@@ -1,0 +1,6 @@
+        counter = 0
+        while len(node.chosen_peers) < node.max_peers / 2:
+            if node.relations[counter][0] not in node.chosen_peers:
+                node.chosen_peers.append(node.relations[counter][0])
+                nodes[node.relations[counter][0]].following_peers.append(node.id)
+            counter += 1

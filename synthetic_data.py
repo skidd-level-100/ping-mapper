@@ -18,13 +18,3 @@ def set_relations(nodes):
                 relation.append([index,score])
         relation.sort(key=itemgetter(1))
         current_node.relations = relation
-        
-
-
-if __name__ == '__main__':
-    # test
-    nodes = get_blank_nodes(10)
-    set_relations(nodes)
-
-    for node in nodes:
-        print(f"{node.id:} | {node.relations}")

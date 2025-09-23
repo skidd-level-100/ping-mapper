@@ -1,5 +1,5 @@
 ## for synthetic data generation
 global area_size
-max_distance = 1000
+max_distance = 1000000
 global ping_per_unit
 ping_per_unit = 2
