@@ -82,7 +82,7 @@ def main():
     print("\nwho connects to who (node id, (input peers, output peers))")
     print("HINT: output to input peers if information comes from output peers")
     for index,node in enumerate(nodes):
-        print(f"    {index} | {node.following_peers} | {node.chosen_peers}")
+        print(f"    node id: {index} | input peers: {node.following_peers} | output peers: {node.chosen_peers}")
 
 if __name__ == '__main__':
     main()
