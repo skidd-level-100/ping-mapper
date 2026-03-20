@@ -7,6 +7,8 @@ todo
 - calculate connections - DONE
 - configurable connection redundancy IE: multiple peers -> one peer so then the one peer can verify that its not getting bogus - DONE
 
+- code readablility (i came back 6 months later and am like WTH)
+
 - add data simulation
     - start with basic sim
         - hopefully be able to expand sim to have nodes joining/leaving and bad nodes sending false data

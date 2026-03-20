@@ -22,13 +22,13 @@ def aquire_best_peers(nodes):
     for node in nodes:
         all_relations.append(node.relations)
 
-    total_relations_in_each_list = len(all_relations) - 1 # nodes dont inculde themselfs  in their relations so the list size is one less
+    total_relations_in_each_list = len(all_relations) - 1 # nodes dont inculde themselfs in their relations so the list size is one less
 
     for relation_layer_index in range(0,total_relations_in_each_list):
 
         for node_id in range(0,len(nodes)):
             winner = who_gets(node_id, relation_layer_index, all_relations, nodes)
-            if winner != False:
+            if winner:
                 nodes[winner].chosen_peers.append(node_id)
                 nodes[node_id].following_peers.append(winner)
 
@@ -49,10 +49,9 @@ def aquire_best_peers(nodes):
                 nodes[node.relations[counter][0]].following_peers.append(node.id)
             counter += 1
 
-
+# honestly forgot what was going on here.
 def who_gets(wanted_node_id, relation_layer_index, all_relations, nodes):
     wanters = []
-
 
     for node_id,relation in enumerate(all_relations):
         if relation[relation_layer_index][0] == wanted_node_id:
