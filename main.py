@@ -15,7 +15,6 @@ from synthetic_data import *;
 
 from operator import itemgetter 
 
-
 def aquire_best_peers(nodes):
 
     all_relations = []
@@ -66,8 +65,8 @@ def who_gets(wanted_node_id, relation_layer_index, all_relations, nodes):
                     want_level = relation[relation_layer_index_next][1] - relation[relation_layer_index][1]
                     wanters.append([node_id, want_level])
 
-    wanters.sort(key = itemgetter(1), reverse=True)
     if wanters:
+        wanters.sort(key = itemgetter(1), reverse=True)
         return wanters[0][0]
     else:
         return False
