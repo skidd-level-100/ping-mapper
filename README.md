@@ -1,14 +1,11 @@
 # ping-mapper
 maps optimal connections between nodes based on scores and with configurable connection redundancy, im using it for a p2p mesh in the future 
 
+# todo
 
-todo
-
-- calculate connections - DONE
-- configurable connection redundancy IE: multiple peers -> one peer so then the one peer can verify that its not getting bogus - DONE
-
-- code readablility (i came back 6 months later and am like WTH)
-
+- rewrite terrible codebase to a codebase that is less terrible-ish
+- calculate connections
+- configurable connection redundancy IE: multiple peers -> one peer so then the one peer can verify that its not getting bogus
 - add data simulation
     - start with basic sim
         - hopefully be able to expand sim to have nodes joining/leaving and bad nodes sending false data
